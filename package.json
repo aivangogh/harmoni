@@ -1,0 +1,37 @@
+{
+  "name": "harmoni",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "dev:server": "turbo run dev --filter=server",
+    "dev:web": "turbo run dev --filter=web",
+    "dev:mobile": "turbo run dev --filter=mobile"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.16.4",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.0",
+    "typescript": "5.8.2",
+    "vite": "^6.2.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.2.8",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@remix-run/node": "^2.16.4",
+    "@remix-run/react": "^2.16.4",
+    "@remix-run/serve": "^2.16.4",
+    "isbot": "4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

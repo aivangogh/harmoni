@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"strict": true,
+		"skipLibCheck": true,
+		"types": ["node"],
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"],
+			"@controllers/*": ["src/controllers/*"],
+			"@data/*": ["src/data/*"],
+			"@lib/*": ["src/lib/*"],
+			"@routes/*": ["src/routes/*"],
+      "@database/*": ["src/config/database/*"],
+      "@schemas/*": ["src/config/database/schemas/*"],
+			"@types/*": ["src/config/database/types/*"],
+			"@utils/*": ["src/utils/*"],
+			"@services/*": ["src/services/*"]
+		}
+	}
+}
